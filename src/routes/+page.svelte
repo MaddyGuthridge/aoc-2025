@@ -1,4 +1,6 @@
 <script>
+    import { resolve } from "$app/paths";
+
   const days = ['01'];
 </script>
 
@@ -6,7 +8,6 @@
 
 <ul>
   {#each days as day (day)}
-    <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-    <li><a href={`/day${day}`}>Day {day}</a></li>
+    <li><a href={resolve(`/day01`)}>Day {day}</a></li>
   {/each}
 </ul>

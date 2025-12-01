@@ -4,7 +4,7 @@
   const sleep = (ms: number) => new Promise(r => (void setTimeout(r, ms)));
 
   let input = $state('');
-  let speed = $state(0);
+  let speed = $state(100);
   let sleepTime = $derived(100 - speed);
 
   let active = $state(false);
